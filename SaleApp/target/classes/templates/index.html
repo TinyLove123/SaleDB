@@ -1,0 +1,15 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Home Page</title>
+    </head>
+    <body>
+        <h1 >WELCOME TO ...</h1>
+        <h1 th:text="${msg}"></h1>
+        <ul>
+            <li th:each="c: ${categories}" th:text="${c.name}">
+                
+            </li>
+        </ul>
+    </body>
+</html>

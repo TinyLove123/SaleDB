@@ -1,0 +1,15 @@
+com\vtt\pojo\Category.class
+com\vtt\pojo\SaleOrder.class
+com\vtt\configs\HibernateConfigs.class
+com\vtt\configs\WebAppContextConfigs.class
+com\vtt\pojo\OrderDetail.class
+com\vtt\pojo\Product.class
+com\vtt\controller\HomeController.class
+com\vtt\configs\ThymeleafConfigs.class
+com\vtt\pojo\Comment.class
+com\vtt\pojo\User.class
+com\vtt\pojo\Tag.class
+com\vtt\saleapp\JakartaRestConfiguration.class
+com\vtt\saleapp\resources\JakartaEE11Resource.class
+com\vtt\configs\DitpatcherServletInit.class
+com\vtt\pojo\ProdTag.class
