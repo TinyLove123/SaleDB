@@ -1,0 +1,30 @@
+<!doctype html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Quản lý sản phẩm</title>
+    <th:context th:replace="base :: resources"></th:context>
+</head>
+<body>
+    <div th:fragment="base :: header"></div>
+    <form method="post" enctype="multipart/form-data">
+        <div class="form-floating mb-3 mt-3">
+            <input type="text" class="form-control" id="name" placeholder="Tên sản phẩm" name="name">
+             <label for="name" class="form-label">Tên sản phẩm</label>
+        </div>
+        <div class="form-floating mb-3 mt-3">
+            <input type="number" class="form-control" id="price" placeholder="Nhập giá tiền" name="price">
+            <label for="price" class="form-label">Giá tiền</label>
+        </div>
+        <div class="form-floating mb-3 mt-3">
+            <select class="form-select" id="cate" th:field="*(name">
+                <option th:each="c: $(category)" th:text="$(c.name)" th:value="$(c.id)"></option>
+            </select>
+            <label for="cate" class="form-label">Danh mục</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <h1 class="text-center text-info mt-2">QUẢN LÝ SẢN PHẨM</h1>
+</body>
+</html>
